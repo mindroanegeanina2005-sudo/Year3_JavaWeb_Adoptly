@@ -1,6 +1,6 @@
 // src/shared/Layout.jsx
 // App shell: header + navigation + page content (<Outlet/>) + footer.
-// Owner: Member 1. If you need a new nav link, ask Member 1.
+// Anyone can add or change nav links here.
 
 import { NavLink, Outlet, useNavigate } from 'react-router-dom'
 import { useAuth } from './AuthContext'

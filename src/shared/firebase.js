@@ -1,7 +1,7 @@
 // src/shared/firebase.js
 // The ONE place where Firebase is initialised. Everyone imports from here:
 //   import { auth, db, storage } from '../shared/firebase'
-// Owner: Member 1. Don't initialise Firebase anywhere else.
+// Don't initialise Firebase anywhere else.
 
 import { initializeApp } from 'firebase/app'
 import { getAuth } from 'firebase/auth'
