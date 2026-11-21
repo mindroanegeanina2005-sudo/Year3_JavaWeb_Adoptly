@@ -1,6 +1,16 @@
 # Adoptly
 
-Animal shelter website (React + Vite). Work in progress.
+Animal shelter website with a fast personality quiz that suggests the best-suited animal.
+University software systems design project, team of 3.
+
+## Project description
+
+Adoptly lets guests browse pets and take a 2-minute personality quiz. Adopters can
+register, save their quiz result, and request a meeting for a pet. Shelter admins manage
+listings and answer meeting requests. Registration and request-status emails are sent
+automatically.
+
+Actors: Guest, Adopter, Shelter Admin.
 
 ## Run it from zero
 
@@ -28,6 +38,7 @@ npm install
 ```
 
 This downloads everything into `node_modules/` (takes a minute; never commit that folder).
+An `install-scripts` warning about `protobufjs` and `@firebase/util` is expected and harmless.
 
 ### 3. Run it
 
@@ -43,6 +54,7 @@ Open the `Local:` address it prints (usually http://localhost:5173). Press `Ctrl
 npm run build     # production build into dist/
 npm run preview   # serve the dist/ build locally
 npm run lint      # check the code with oxlint
+npm test          # unit tests (vitest)
 ```
 
 ### Common problems
