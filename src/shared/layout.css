@@ -1,0 +1,222 @@
+/* src/shared/layout.css: layout + a few shared helpers (Member 1). */
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+/* Header */
+.site-header {
+  background: #ffffff;
+  border-bottom: 1px solid #e5e7eb;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #c2410c;
+  text-decoration: none;
+}
+
+.main-nav {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.nav-link {
+  padding: 0.4rem 0.7rem;
+  border-radius: 6px;
+  color: #374151;
+  text-decoration: none;
+}
+
+.nav-link:hover {
+  background: #f3f4f6;
+}
+
+.nav-link.active {
+  background: #ffedd5;
+  color: #9a3412;
+  font-weight: 600;
+}
+
+.nav-button {
+  margin-left: 0.25rem;
+  padding: 0.4rem 0.7rem;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  background: #ffffff;
+  color: #374151;
+  cursor: pointer;
+}
+
+.nav-button:hover {
+  background: #f3f4f6;
+}
+
+/* Main */
+.main-content {
+  flex: 1;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+/* Footer */
+.site-footer {
+  border-top: 1px solid #e5e7eb;
+  background: #fafafa;
+  color: #6b7280;
+  font-size: 0.9rem;
+}
+
+.footer-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+/* Dev role toggle */
+.dev-toggle {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.3rem 0.5rem;
+  border: 1px dashed #f59e0b;
+  border-radius: 6px;
+  background: #fffbeb;
+}
+
+.dev-toggle-label {
+  font-weight: 600;
+  color: #92400e;
+}
+
+.dev-toggle button {
+  padding: 0.15rem 0.5rem;
+  border: 1px solid #d1d5db;
+  border-radius: 4px;
+  background: #ffffff;
+  cursor: pointer;
+}
+
+.dev-toggle button.active {
+  background: #f59e0b;
+  border-color: #f59e0b;
+  color: #ffffff;
+}
+
+/* Shared helpers */
+.placeholder {
+  padding: 1.5rem;
+  border: 2px dashed #d1d5db;
+  border-radius: 10px;
+  background: #ffffff;
+}
+
+.placeholder-meta {
+  color: #6b7280;
+  font-size: 0.9rem;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.55rem 1rem;
+  border: none;
+  border-radius: 8px;
+  background: #ea580c;
+  color: #ffffff;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: #c2410c;
+}
+
+.btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.btn-secondary {
+  background: #ffffff;
+  color: #c2410c;
+  border: 1px solid #fdba74;
+}
+
+.btn-secondary:hover {
+  background: #fff7ed;
+}
+
+.form {
+  display: grid;
+  gap: 0.9rem;
+  max-width: 420px;
+}
+
+.form label {
+  display: grid;
+  gap: 0.3rem;
+  font-weight: 600;
+}
+
+.form input {
+  padding: 0.55rem 0.7rem;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-weight: 400;
+}
+
+.form-error {
+  color: #b91c1c;
+}
+
+.status-box {
+  margin-top: 1.5rem;
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  font-size: 0.9rem;
+}
+
+.status-ok {
+  background: #ecfdf5;
+  color: #065f46;
+}
+
+.status-error {
+  background: #fef2f2;
+  color: #991b1b;
+}
+
+.status-checking {
+  background: #f3f4f6;
+  color: #374151;
+}
